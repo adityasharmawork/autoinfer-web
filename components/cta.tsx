@@ -5,7 +5,7 @@ import Link from "next/link"
 
 export function CTA() {
   return (
-    <section className="py-24 bg-slate-950 relative overflow-hidden">
+    <section className="py-36 bg-slate-950 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-green-500/5" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_70%)]" />

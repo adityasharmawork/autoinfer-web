@@ -47,19 +47,19 @@ export function Benefits() {
     <section className="py-24 bg-gradient-to-b from-slate-950 to-slate-900 relative">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(59,130,246,0.05),transparent_50%)]" />
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
+      <div className="container mx-auto px-4 py-8 relative z-10">
+        <div className="text-center mb-24">
           <h2 className="text-4xl font-bold text-white mb-4">
             Transform Your <span className="text-blue-400">Development Workflow</span>
           </h2>
-          <p className="text-xl text-slate-400 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-400 max-w-3xl mx-auto mt-8 mb-16">
             Join thousands of developers who have revolutionized their workflow with AutoInfer. Experience the power of
             automated schema generation.
           </p>
         </div>
 
         {/* Key Benefits */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-48">
           {benefits.map((benefit, index) => (
             <Card
               key={index}
@@ -88,7 +88,7 @@ export function Benefits() {
         </div>
 
         {/* Use Cases */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center my-16">
           <div>
             <h3 className="text-3xl font-bold text-white mb-6">
               Perfect for <span className="text-green-400">Every Project</span>

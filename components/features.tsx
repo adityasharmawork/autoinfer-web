@@ -100,10 +100,10 @@ export function Features() {
     <section className="py-24 bg-slate-950 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/20 to-transparent" />
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative z-10 my-12">
         {/* Data Sources */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl font-bold text-white mb-8">
             Connect to <span className="text-blue-400">Any Data Source</span>
           </h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto">
@@ -134,11 +134,11 @@ export function Features() {
         </div>
 
         {/* Output Formats */}
-        <div className="text-center mb-16">
+        <div className="text-center mt-40 mb-16">
           <h2 className="text-4xl font-bold text-white mb-4">
             Generate <span className="text-purple-400">Professional Output</span>
           </h2>
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto">
+          <p className="text-xl text-slate-400 max-w-2xl mx-auto mt-8">
             Choose from industry-standard formats that integrate perfectly with your development workflow
           </p>
         </div>
@@ -163,7 +163,7 @@ export function Features() {
         </div>
 
         {/* Benefits */}
-        <div className="text-center mb-16">
+        <div className="text-center mt-40 mb-20">
           <h2 className="text-4xl font-bold text-white mb-4">
             Why Choose <span className="text-green-400">AutoInfer</span>?
           </h2>
