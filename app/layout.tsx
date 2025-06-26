@@ -9,7 +9,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "AutoInfer - The Tool for Modern Developers",
+  // title: "AutoInfer - The Tool for Modern Developers",
+  title: "AutoInfer - TypeScript Interface Generator",
   description:
     "Effortlessly generate TypeScript interfaces and JSON schemas from any data source. Streamline your workflow with AutoInfer.",
   keywords: "typescript, json schema, code generation, developer tools, api, database, schema inference",
