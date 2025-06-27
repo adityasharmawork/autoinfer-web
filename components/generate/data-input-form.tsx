@@ -6,8 +6,10 @@ import { useState } from "react"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { Card } from "@/components/ui/card"
-import { Upload, FileText, AlertCircle } from "lucide-react"
+// Updated import to include CardHeader, CardTitle, and CardContent
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
+// Updated import to include AlertTriangle
+import { Upload, FileText, AlertCircle, AlertTriangle } from "lucide-react"
 
 type DataSource = "api" | "json" | "csv" | "mongodb" | "mysql" | "postgresql"
 
@@ -303,20 +305,38 @@ export function DataInputForm({ source, data, onDataChange }: DataInputFormProps
     }
   }
 
+  const isDatabaseSource = source === "mongodb" || source === "mysql" || source === "postgresql"
+
   return (
     <div>
       <div className="text-center mb-8">
         <h3 className="text-2xl font-bold text-white mb-2">{getTitle()}</h3>
         <p className="text-slate-400">{getDescription()}</p>
-        {(source === "mongodb" || source === "mysql" || source === "postgresql") && <p className="text-slate-400">(Connection strings may contain passwords, using CLI tool is highly recommended)</p>}
+        {/* The old paragraph has been removed from here */}
       </div>
+
+      {/* --- NEW ATTENTION CARD --- */}
+      {isDatabaseSource && (
+        <Card className="mb-8 bg-amber-900/20 border-amber-700/40">
+          <CardHeader className="flex-row items-center space-x-3 pb-3">
+            <AlertTriangle className="w-5 h-5 text-amber-400" />
+            <CardTitle className="text-amber-300 text-base font-semibold">Attention</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <ol className="list-decimal list-inside space-y-2 text-amber-200/80 text-sm leading-relaxed">
+              <li>It will only work if you have allowed all origins (IP Addresses), using CLI Tool is highly recommended.</li>
+              <li>Connection strings may contain passwords, using CLI tool is highly recommended.</li>
+            </ol>
+          </CardContent>
+        </Card>
+      )}
 
       <Card className="bg-slate-900/50 border-slate-700">
         <div className="p-6">
           {source === "api" && renderApiForm()}
           {source === "json" && renderJsonForm()}
           {source === "csv" && renderCsvForm()}
-          {(source === "mongodb" || source === "mysql" || source === "postgresql") && renderDatabaseForm()}
+          {isDatabaseSource && renderDatabaseForm()}
 
           {error && (
             <div className="mt-4 p-3 bg-red-500/10 border border-red-500/20 rounded-md flex items-center space-x-2">
