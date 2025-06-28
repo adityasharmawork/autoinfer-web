@@ -49,6 +49,16 @@ export function Footer() {
                 <Mail className="w-5 h-5" />
               </Link> */}
             </div>
+            
+
+                {/* Product Hunt Badge */}
+          <div className="flex mt-8">
+            <a href="https://www.producthunt.com/products/autoinfer?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-autoinfer" target="_blank" rel="noopener noreferrer">
+              <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=985023&theme=light&t=1751096957927" alt="AutoInfer - Generate Complex TypeScript Interfaces in seconds | Product Hunt" style={{width: '240px', height: '54px'}} width="250" height="54" />
+            </a>
+          </div>
+
+
           </div>
 
           {/* Product */}
