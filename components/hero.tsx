@@ -33,6 +33,14 @@ export function Hero() {
 
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
+
+          {/* Product Hunt Badge */}
+          <div className="flex justify-center mb-12">
+            <a href="https://www.producthunt.com/products/autoinfer?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-autoinfer" target="_blank" rel="noopener noreferrer">
+              <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=985023&theme=light&t=1751096957927" alt="AutoInfer - Generate Complex TypeScript Interfaces in seconds | Product Hunt" style={{width: '250px', height: '54px'}} width="250" height="54" />
+            </a>
+          </div>
+
           {/* Badge */}
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-8 animate-fade-in">
             <Sparkles className="w-4 h-4 mr-2" />
@@ -53,7 +61,7 @@ export function Hero() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <Link href="/generate">
               <Button
                 size="lg"
