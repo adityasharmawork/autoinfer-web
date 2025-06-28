@@ -36,6 +36,19 @@ export default function RootLayout({
   return (
     // <html lang="en" suppressHydrationWarning>
       <html lang="en">
+        <head>
+         {/* <!-- Google tag (gtag.js) --> */}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5LPZ5XP0L"></script>
+          <script>
+            {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-P5LPZ5XP0L');
+            `}
+            </script> 
+        </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           <Header />
