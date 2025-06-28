@@ -134,7 +134,7 @@ export function Benefits() {
             {/* Floating Stats */}
             <div className="absolute -top-4 -right-4 bg-green-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg">
               <Rocket className="w-4 h-4 inline mr-1" />
-              100+ Downloads
+              130+ Downloads
             </div>
           </div>
         </div>
