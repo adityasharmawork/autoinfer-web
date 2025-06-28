@@ -117,6 +117,8 @@ export default function AutoInferDocs() {
                             </p>
                             <CodeSnippet>{`npm install -g autoinfer`}</CodeSnippet>
                             <p>Once installed, you can access the tool from anywhere in your terminal using the `autoinfer` command.</p>
+                            <CodeSnippet>{`autoinfer`}</CodeSnippet>
+                            <p>Woah! Happy Building! <br /> Our tool will guide to step by step to generate any complex TypeScript Interface / JSON Schema in seconds.</p>
                         </section>
 
                         {/* Quick Demo Section */}
