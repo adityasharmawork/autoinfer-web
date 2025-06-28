@@ -122,8 +122,20 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-8 mt-16 mb-8 max-w-2xl">
+          {/* <div className="grid grid-cols-3 gap-8 mt-16 mb-8 max-w-2xl">
             <iframe src="https://cards.producthunt.com/cards/products/1081112" width="900" height="505" scrolling="no"></iframe>
+          </div> */}
+
+          <div className="flex justify-center mt-16 mb-8">
+            <iframe 
+              src="https://cards.producthunt.com/cards/products/1081112" 
+              className="w-full max-w-[900px] h-[505px] 
+                        sm:w-full sm:h-[300px] 
+                        md:w-full md:h-[400px] 
+                        lg:w-[900px] lg:h-[505px]
+                        border-0 rounded-lg shadow-lg"
+              scrolling="no">
+            </iframe>
           </div>
 
         </div>
