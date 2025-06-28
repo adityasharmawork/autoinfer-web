@@ -6,6 +6,8 @@ import { Header } from "@/components/layout/header"
 import { Footer } from "@/components/layout/footer"
 import { ThemeProvider } from "@/components/theme-provider"
 
+import { Analytics } from "@vercel/analytics/next"
+
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
@@ -55,6 +57,7 @@ export default function RootLayout({
           <main className="pt-16">{children}</main>
           <Footer />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
