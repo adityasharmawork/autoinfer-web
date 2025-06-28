@@ -32,7 +32,7 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto px-4 text-center relative z-10">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto mt-20">
 
           {/* Product Hunt Badge */}
           <div className="flex justify-center mb-12">
@@ -121,6 +121,11 @@ export function Hero() {
               <div className="text-slate-400 text-sm">Time Saved</div>
             </div>
           </div>
+
+          <div className="grid grid-cols-3 gap-8 mt-16 mb-8 max-w-2xl">
+            <iframe src="https://cards.producthunt.com/cards/products/1081112" width="900" height="505" scrolling="no"></iframe>
+          </div>
+
         </div>
       </div>
     </section>
